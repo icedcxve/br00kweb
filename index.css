@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Cascadia Code";
+    src: url("cascadia-code.ttf") format("truetype");
+}
+
+@media only screen {
+    * {
+        font-size: 1em;
+        line-height: 1.2em;
+        font-family: "Cascadia Code", monospace;
+    }
+    html {
+        padding: 1.2em;
+    }
+    body {
+        background: #001f27; /* Darker base03 */
+        color: #586e75; /* Darker base01 */
+        border-bottom: 1.2em solid #cb4b16; /* Dark orange */
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    a {
+        color: #839496; /* base0 */
+        font-weight: bold;
+        text-decoration: none;
+    }
+    a:hover, a:active {
+        color: #001f27; /* Darker base03 */
+        background: #839496; /* base0 */
+    }
+    h1, h2, h3, h4, h5, h6 {
+        margin: 2.4em 0 1.2em 0;
+        text-transform: uppercase;
+    }
+    h1 { color: #268bd2; } /* blue */ h1:before { content: "# "; }
+    h2 { color: #2aa198; } /* cyan */ h2:before { content: "## "; }
+    h3 { color: #d33682; } /* magenta */ h3:before { content: "### "; }
+    h4 { color: #268bd2; } /* blue */ h4:before { content: "#### "; }
+    h5 { color: #2aa198; } /* cyan */ h5:before { content: "##### "; }
+    h6 { color: #d33682; } /* magenta */ h6:before { content: "###### "; }
+    header a {
+        background: #cb4b16; /* Dark orange */
+        color: #001f27; /* Darker base03 */
+        display: block;
+        padding: 0 1.2em;
+    }
+    ul {
+        list-style-type: none;
+        margin: 1.2em 0;
+        padding: 0 0 0 1.8em;
+        text-indent: -1.8em;
+    }
+    ul li:before {
+        color: #6c71c4; /* violet */
+        content: "=> ";
+    }
+    p code {
+        color: #b58900; /* yellow */
+        padding-left: 2.4em;
+    }
+}
